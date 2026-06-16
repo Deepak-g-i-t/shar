@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="A special birthday surprise made just for Sharani — a romantic digital journey." />
+  <title>Happy Birthday, Sharani ❤️</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== MUSIC BUTTON ===== -->
+  <button id="music-btn" aria-label="Toggle background music" title="Toggle Music">
+    <span id="music-icon">♪</span>
+    <span id="music-label">Music</span>
+  </button>
+
+  <!-- ====================================================
+       SECTION 1 — HERO
+  ===================================================== -->
+  <section id="hero" class="section hero-section">
+    <canvas id="hero-canvas"></canvas>
+    <div class="floating-hearts" id="hero-hearts"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ A little surprise just for you ✦</p>
+      <h1 class="hero-heading">
+        Happy Birthday,<br />
+        <span class="name-gradient">Sharani</span> ❤️
+      </h1>
+      <p class="hero-sub">A little journey made just for you.</p>
+      <div class="scroll-cue">
+        <span>Scroll Down</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 2 — PHOTO COLLAGE
+  ===================================================== -->
+  <section id="memories" class="section memories-section">
+    <div class="section-header">
+      <p class="section-eyebrow">✦ memories ✦</p>
+      <h2 class="section-title">Every Moment<br /><em>A Treasure</em></h2>
+    </div>
+
+    <div class="photo-collage" id="photo-collage">
+      <div class="polaroid" data-index="0" style="--rot:-4deg;--tx:-20px;--ty:18px;">
+        <div class="photo-inner">
+          <div class="photo-img-wrap">
+            <img src="public/photos/photo1.jpeg" alt="Memory 1" class="photo-img"
+                 onerror="this.closest('.photo-img-wrap').classList.add('no-img')" loading="lazy" />
+            <div class="photo-placeholder-art">🌸</div>
+          </div>
+          <p class="photo-caption">That smile ✨</p>
+        </div>
+      </div>
+
+      <div class="polaroid" data-index="1" style="--rot:3deg;--tx:30px;--ty:-8px;">
+        <div class="photo-inner">
+          <div class="photo-img-wrap">
+            <img src="public/photos/photo2.jpeg" alt="Memory 2" class="photo-img"
+                 onerror="this.closest('.photo-img-wrap').classList.add('no-img')" loading="lazy" />
+            <div class="photo-placeholder-art">🌷</div>
+          </div>
+          <p class="photo-caption">Pure happiness 🌸</p>
+        </div>
+      </div>
+
+      <div class="polaroid" data-index="2" style="--rot:-2deg;--tx:8px;--ty:40px;">
+        <div class="photo-inner">
+          <div class="photo-img-wrap">
+            <img src="public/photos/photo3.jpeg" alt="Memory 3" class="photo-img"
+                 onerror="this.closest('.photo-img-wrap').classList.add('no-img')" loading="lazy" />
+            <div class="photo-placeholder-art">🌺</div>
+          </div>
+          <p class="photo-caption">Cherished forever 💕</p>
+        </div>
+      </div>
+
+      <div class="polaroid" data-index="3" style="--rot:5deg;--tx:-15px;--ty:-25px;">
+        <div class="photo-inner">
+          <div class="photo-img-wrap">
+            <img src="public/photos/photo4.jpeg" alt="Memory 4" class="photo-img"
+                 onerror="this.closest('.photo-img-wrap').classList.add('no-img')" loading="lazy" />
+            <div class="photo-placeholder-art">🌼</div>
+          </div>
+          <p class="photo-caption">Best days 🌙</p>
+        </div>
+      </div>
+
+      <div class="polaroid" data-index="4" style="--rot:-3deg;--tx:45px;--ty:8px;">
+        <div class="photo-inner">
+          <div class="photo-img-wrap">
+            <img src="public/photos/photo5.jpeg" alt="Memory 5" class="photo-img"
+                 onerror="this.closest('.photo-img-wrap').classList.add('no-img')" loading="lazy" />
+            <div class="photo-placeholder-art">🌹</div>
+          </div>
+          <p class="photo-caption">Always you 💝</p>
+        </div>
+      </div>
+
+      <div class="polaroid" data-index="5" style="--rot:2deg;--tx:-30px;--ty:15px;">
+        <div class="photo-inner">
+          <div class="photo-img-wrap">
+            <img src="public/photos/photo6.jpeg" alt="Memory 6" class="photo-img"
+                 onerror="this.closest('.photo-img-wrap').classList.add('no-img')" loading="lazy" />
+            <div class="photo-placeholder-art">💖</div>
+          </div>
+          <p class="photo-caption">So pretty ❤️</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 3 — FEELING CARDS
+  ===================================================== -->
+  <section id="feelings" class="section feelings-section">
+    <div class="vine-left"></div>
+    <div class="vine-right"></div>
+
+    <div class="section-header">
+      <p class="section-eyebrow">✦ from the heart ✦</p>
+      <h2 class="section-title">Little Truths<br /><em>About You</em></h2>
+    </div>
+
+    <div class="feeling-cards-grid">
+      <div class="feeling-card glass-card" data-delay="0">
+        <div class="card-icon">🌸</div>
+        <p class="card-text">"You make every day Irritating and I love it"</p>
+      </div>
+      <div class="feeling-card glass-card" data-delay="0.18">
+        <div class="card-icon">☀️</div>
+        <p class="card-text">"Stay happy always"</p>
+      </div>
+      <div class="feeling-card glass-card" data-delay="0.36">
+        <div class="card-icon">💫</div>
+        <p class="card-text">"Thank you for being there."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 4/5 — PIXEL JOURNEY
+       Structure: outer div with min-height:300vh for scroll distance.
+       Inner sticky wrapper holds the canvas at 100vh height.
+  ===================================================== -->
+  <section id="pixel-journey" class="section pixel-section">
+    <div class="pixel-sticky-wrap">
+      <canvas id="pixel-canvas"></canvas>
+
+      <!-- Text overlays shown at scroll phases -->
+      <div class="pixel-scene-text" id="pixel-text-overlay">
+        <p>He set off on a journey…</p>
+        <p>Through every memory, every smile.</p>
+        <p>Carrying something special for you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 6 — BOUQUET MOMENT
+  ===================================================== -->
+  <section id="bouquet" class="section bouquet-section">
+    <canvas id="bouquet-canvas"></canvas>
+    <div class="bloom-overlay" id="bloom-overlay"></div>
+
+    <div class="bouquet-stage">
+      <canvas id="char-bouquet-canvas"></canvas>
+      <div class="bouquet-text" id="bouquet-text">
+        <p class="bouquet-label">For you… ❤️</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 7 — BIRTHDAY MESSAGE
+  ===================================================== -->
+  <section id="message" class="section message-section">
+    <div class="message-petal-field" id="msg-petals"></div>
+
+    <div class="message-card glass-card" id="message-card">
+      <div class="msg-flower-tl">🌸</div>
+      <div class="msg-flower-tr">🌷</div>
+      <div class="msg-flower-bl">🌺</div>
+      <div class="msg-flower-br">🌹</div>
+      <div class="message-sparkles" id="msg-sparkles"></div>
+      <div class="message-body" id="message-body"></div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 8 — GRAND FINALE
+  ===================================================== -->
+  <section id="finale" class="section finale-section">
+    <canvas id="finale-canvas"></canvas>
+
+    <div class="finale-content">
+      <h2 class="finale-title" id="finale-title">Happy Birthday ❤️</h2>
+      <p class="finale-sub" id="finale-sub">Forever My Favorite Person</p>
+      <div class="finale-hearts" id="finale-hearts">❤️ 🌸 💕 🌷 ✨</div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/utils.js"></script>
+  <script src="js/petals.js"></script>
+  <script src="js/pixel-character.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
